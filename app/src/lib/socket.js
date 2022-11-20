@@ -1,8 +1,8 @@
-import { Server } from "socket.io";
+import { Server } from 'socket.io';
 
 // Not sure how to make build work in .ts
 export default function injectSocket(server) {
-  const io = new Server(server)
+  const io = new Server(server);
 
   io.on('connection', (socket) => {
     // Generate a random username and send it to the client to display it
@@ -17,5 +17,5 @@ export default function injectSocket(server) {
         time: new Date().toLocaleString()
       });
     });
-  })
+  });
 }

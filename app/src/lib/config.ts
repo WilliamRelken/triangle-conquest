@@ -1,7 +1,7 @@
-import { base } from "$app/paths";
-import ioClient from "socket.io-client";
+import { base } from '$app/paths';
+import ioClient from 'socket.io-client';
 const ENDPOINT = base;
 
-const socket = ioClient(ENDPOINT)
+const socket = ioClient(ENDPOINT);
 
-export const io = socket
+export const io = socket;
